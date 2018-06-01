@@ -44,4 +44,6 @@ app.get('/about',(req, res)=>{
   })
 })
 
-app.listen(port)
+app.listen(port,()=>{
+  console.log(`Listening for requests on port ${port}`)
+})
