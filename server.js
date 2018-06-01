@@ -44,6 +44,13 @@ app.get('/about',(req, res)=>{
   })
 })
 
+app.get('/projects',(req, res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects Page',
+    message:"This is the  projects page"
+  })
+})
+
 app.listen(port,()=>{
   console.log(`Listening for requests on port ${port}`)
 })
